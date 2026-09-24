@@ -655,8 +655,14 @@
         theme.heading
       );
 
+      document.documentElement.style.setProperty(
+        "--heading-background",
+        theme.heading
+      );
+
       localStorage.setItem("selectedTheme", themeName);
     }
+
 
     const themeToggle = document.getElementById("theme-toggle");
     const themeOptions = document.getElementById("theme-options");
@@ -665,21 +671,28 @@
       themeOptions.classList.toggle("show");
     });
 
-    document.querySelectorAll(".theme-option").forEach(function (button) {
+
+    const themeButtons = document.querySelectorAll(".theme-option");
+
+    themeButtons.forEach(function (button) {
       button.addEventListener("click", function () {
-        const selectedTheme = this.dataset.theme;
+        const selectedTheme = button.getAttribute("data-theme");
 
         applyTheme(selectedTheme);
+
         themeOptions.classList.remove("show");
       });
     });
+
 
     const savedTheme = localStorage.getItem("selectedTheme");
 
     if (savedTheme && themes[savedTheme]) {
       applyTheme(savedTheme);
     }
-
+    </script>
+    <!-- Script for Dynamic Projects -->
+    <script>
     const projects = [
       {
         title: "Music Genre Categorization",

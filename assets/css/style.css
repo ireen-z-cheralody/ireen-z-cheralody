@@ -2,8 +2,8 @@
   --primary-color: #6A1B9A;
   --secondary-color: #E91E63;
   --light-color: #FCE4EC;
-  --text-color: #333;
   --heading-text: #F8BBD0;
+  --heading-background: #F8BBD0;
 }
 
 .profile-pic {
@@ -566,7 +566,7 @@ small {
 /* .teal */
 
 .teal {
-  background-color: var(--primary-color) !important;
+  background-color: var(--heading-background) !important;
 }
 
 /* .teal {
