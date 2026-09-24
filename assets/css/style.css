@@ -95,10 +95,10 @@
   -webkit-border-radius: 5px;
 }
 
-/* .readme:hover{
+.readme:hover{
   color: white;
-  background-color: #00796b;
-} */
+  background: none;
+}
 
 .contactme {
   position: relative;
@@ -690,4 +690,22 @@ small {
 
 .typing {
   color: #F8BBD0 !important;
+}
+
+.readme {
+  color: #6A1B9A !important;
+}
+
+.readme:hover {
+  color: white !important;
+  background: none;
+}
+
+.contactme {
+  color: #fff !important;
+}
+
+.contactme:hover {
+  color: #6A1B9A !important;
+  background-color: white;
 }
