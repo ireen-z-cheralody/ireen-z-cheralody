@@ -11,7 +11,7 @@
   /* background-size: cover;  */
   margin: -31px; 
   margin-left:-7px;
-  border: 6px solid rgba(106, 27, 154, 0.4); 
+  border: 6px solid #F8BBD0; 
   border-radius: 50% !important;
 }
 
@@ -708,4 +708,19 @@ small {
 .contactme:hover {
   color: #6A1B9A !important;
   background-color: white;
+}
+
+/* Places Travelled */
+
+.map-container {
+  width: 100%;
+  margin-top: 25px;
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+.map-container iframe {
+  width: 100%;
+  min-height: 450px;
+  border: 0;
 }
