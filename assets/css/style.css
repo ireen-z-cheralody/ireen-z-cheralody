@@ -2,7 +2,7 @@
   --primary-color: #6A1B9A;
   --secondary-color: #E91E63;
   --light-color: #FCE4EC;
-  --heading-text: #F8BBD0;
+  --heading-text: #333;
   --heading-background: #F8BBD0;
 }
 
@@ -556,7 +556,7 @@ small {
 /* main .teal-text */
 
 .teal-text {
-  color: var(--heading-text) !important;
+  color: var(--heading-background) !important;
 }
 
 /* .teal-text {
