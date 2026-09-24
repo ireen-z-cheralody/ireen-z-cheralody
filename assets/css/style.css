@@ -694,6 +694,7 @@ small {
 
 .readme {
   color: #6A1B9A !important;
+  background-color: white !important;
 }
 
 .readme:hover {
