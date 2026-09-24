@@ -346,235 +346,17 @@
     <!-- Fourth Section: Projects -->
     <section id="projects" class="section scrollspy">
       <h3 class="page-title white-text teal">Projects</h3>
+
       <div class="container">
-        <div class="row">
+        <!-- Projects will be inserted here by JavaScript -->
+        <div id="projects-container" class="row"></div>
 
-          <!-- Music Genre Categorization -->
-          <div class="col s12 m6 l4">
-            <div class="card medium">
-              <div class="card-image waves-effect waves-block waves-light">
-                <img alt="Music Genre Categorization using a CNN" src="assets/img/project-music-player.png" style="height: 100%; width: 100%" class="activator" />
-              </div>
-              <div class="card-content">
-                <span class="card-title activator teal-text hoverline">Music Genre Categorization<i
-                    class="mdi-navigation-more-vert right"></i></span>
-                <p>
-                  CNN-based music genre classification using audio signal processing and machine learning.
-                </p>
-              </div>
-              <div class="card-reveal">
-                <!-- TODO: change this -- only close button -->
-                <!-- <span class="card-title brown-text">Accomplishments<i class="mdi-navigation-close right"></i></span> -->
-                <span class="card-title grey-text"><small>Accomplishments</small><i
-                    class="mdi-navigation-close right"></i></span>
-                <ul>
-                  <li><b>Tools:</b> Python, PyTorch, Librosa, NumPy, GitHub</li>
-                  <li>Developed a CNN music genre classifier using <b>128-band mel spectrograms</b>, achieving <b>79.46% test accuracy</b> across 7 genres.</li>
-                  <li>Built an audio preprocessing pipeline combining and balancing <b>4,625 samples</b> from GTZAN and FMA with time stretching, pitch shifting, and Gaussian noise augmentation.</li>
-                  <li>Benchmarked the CNN against an SVM baseline and evaluated performance on <b>35-70 unseen songs</b>, achieving <b>77.02% accuracy</b>.</li>
-                </ul>
-                                <div class="card-action">
-                  <a aria-label="Visit the GitHub repo for  project"
-                    href="https://github.com/ireen-z-cheralody/CNN-Driven-Music-Genre-Categorization" target="_blank"
-                    data-position="top" data-tooltip="View Source"
-                    class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i
-                      class="fa fa-github"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-          
-          <!-- Tummi GIS -->
-          <div class="col s12 m6 l4">
-            <div class="card medium">
-              <div class="card-image waves-effect waves-block waves-light">
-                <img alt="quiz app" src="assets/img/project-quizup-logo-1.png" style="height: 100%; width: 100%" class="activator" />
-              </div>
-              <div class="card-content">
-                <span class="card-title activator teal-text hoverline">Tummi GIS<i
-                    class="mdi-navigation-more-vert right"></i></span>
-                <p>
-                  High-performance C/C++ mapping and routing application.
-                </p>
-              </div>
-              <div class="card-reveal">
-                <!-- TODO: change this -- only close button -->
-                <!-- <span class="card-title brown-text">Accomplishments<i class="mdi-navigation-close right"></i></span> -->
-                <span class="card-title grey-text"><small>Accomplishments</small><i
-                    class="mdi-navigation-close right"></i></span>
-                <ul>
-                  <li><b>Tools:</b> C, C++, EZGL, Libcurl, VNC, Glade, GTK, APIs, Git</li>
-                  <li>Engineered <b>Dijkstra + A*</b> pathfinding with turn-penalty handling, reducing average route query time by <b>~40%</b>. </li>
-                  <li>Implemented a multithreaded <b>Traveling Courier Problem</b> solver using iterated local search, double-bridge perturbation, and or-opt moves across <b>4 parallel threads</b>, achieving solutions within <b>15% of optimal</b>. </li>
-                  <li>Optimized map rendering and routing through cached road geometry, background-threaded computation, and Valgrind debugging, reducing per-frame render time by <b>~60%</b> on graphs with <b>200k+ edges</b>.</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-
-          <!-- 1. Django Project -->
-          <!-- <div class="col s12 m6 l6">
-            <div class="card medium">
-              <div class="card-image waves-effect waves-block waves-light">
-                <img alt="django web app" src="/assets/img/project-library-logo.png" style="height: 100%; width: 100%" class="activator" />
-              </div>
-              <div class="card-content">
-                <span class="card-title activator teal-text hoverline">Local Library Web-App<i
-                    class="mdi-navigation-more-vert right"></i></span>
-                <p>
-                  A web-app that creates an online catalog for a small local library, where users can browse available books and manage their accounts.
-                </p>
-              </div>
-              <div class="card-reveal">
-                <span class="card-title grey-text"><small>Accomplishments</small><i
-                    class="mdi-navigation-close right"></i></span>
-                <ul>
-                  <li><b>Tools:</b> HTML, CSS, Bootstrap, SQLite, Django, Heroku</li>
-                  <li>Users can view list and detail information for books and authors.</li>
-                  <li>Admin users can create and manage models.</li>
-                  <li>Librarians can renew reserved books.</li>
-
-                </ul>
-                <div class="card-action">
-                  <a aria-label="Visit " href="https://django-local-lib.herokuapp.com" target="_blank" data-position="top"
-                    data-tooltip="View Online"
-                    class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i
-                      class="fa fa-external-link"></i></a>
-                  <a aria-label="Visit the GitHub repo for  project" href="https://github.com/varadbhogayata/django-local-library"
-                    target="_blank" data-position="top" data-tooltip="View Source"
-                    class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i
-                      class="fa fa-github"></i></a>
-                </div>
-              </div>
-            </div>
-          </div> -->
-
-          <!-- Low-Level Garageband -->
-          <div class="col s12 m6 l4">
-            <div class="card medium">
-              <div class="card-image waves-effect waves-block waves-light">
-                <img alt="Screenshot of web app" src="assets/img/project-blog-logo.jpg"
-                style="height: 100%; width: 100%" class="activator" />
-              </div>
-              <div class="card-content">
-                <span class="card-title activator teal-text hoverline">Low-Level GarageBand<i
-                    class="mdi-navigation-more-vert right"></i></span>
-                <p>
-                  Hardware-accelerated digital audio workstation built in C.
-                </p>
-              </div>
-              <div class="card-reveal">
-                <!-- TODO: change this -- only close button -->
-                <!-- <span class="card-title brown-text">Accomplishments<i class="mdi-navigation-close right"></i></span> -->
-                <span class="card-title teal-text"><small>Accomplishments</small><i
-                    class="mdi-navigation-close right"></i></span>
-                <ul>
-                  <li><b>Tools:</b> C, VGA Display, CPULator, GitHub</li>
-                  <li>Built a <b>~3,000+ line</b> GarageBand-style digital audio workstation in C on a DE1-SoC (RISC-V), integrating real-time audio, VGA graphics, and PS/2 input.</li>
-                  <li>Implemented memory-mapped audio playback across multiple simultaneous channels and double-buffered VGA rendering, achieving <b>&lt;10 ms audio latency</b> and <b>~60 FPS</b>.</li>
-                  <li>Integrated low-level PS/2 input and hardware debugging across audio FIFOs, framebuffers, and interrupts, achieving <b>&lt;20 ms end-to-end input response time</b>.</li>
-                </ul>
-                <div class="card-action">
-                  <a aria-label="Visit the GitHub repo for  project"
-                    href="https://github.com/alex-an0406/FPGArageBand" target="_blank"
-                    data-position="top" data-tooltip="View Source"
-                    class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i
-                      class="fa fa-github"></i></a>
-                </div> 
-              </div>
-            </div>
-          </div>
-
-          <!-- Low Level Pacman -->
-          <div class="col s12 m6 l4">
-            <div class="card medium">
-              <div class="card-image waves-effect waves-block waves-light">
-                <img alt="Screenshot of  web app" src="assets/img/project-aim_bert-bias.png" style="height: 100%; width: 100%" class="activator" />
-              </div>
-              <div class="card-content">
-                <span class="card-title activator teal-text hoverline">Low-Level Pacman<i
-                    class="mdi-navigation-more-vert right"></i></span>
-                <p>
-                  FGPA-based Pac-Man game developed in Verilog.
-                </p>
-              </div>
-              <div class="card-reveal">
-                <!-- TODO: change this -- only close button -->
-                <!-- <span class="card-title brown-text">Accomplishments<i class="mdi-navigation-close right"></i></span> -->
-                <span class="card-title teal-text"><small>Accomplishments</small><i
-                    class="mdi-navigation-close right"></i></span>
-                <ul>
-                  <li> <b>Tools:</b> Verilog HDL, Quartus, DEsim, ModelSim </li> 
-                  <li> Developed a <b>~5,000+ line</b> Pac-Man game in Verilog HDL, synthesizing and deploying the design on FPGA hardware. </li> 
-                  <li> Designed <b>10+ hierarchical finite state machines</b> for player movement, collision detection, scoring, and game-state control. </li> 
-                  <li> Integrated PS/2 keyboard input and VGA graphics at <b>~60 FPS</b> and debugged hardware-simulation mismatches involving VGA artifacts and maze boundaries. </li>
-
-                </ul>
-                <div class="card-action">
-                  <a aria-label="Visit the GitHub repo for  project"
-                    href="https://github.com/ireen-z-cheralody/Low-Level-Pacman-in-Verilog" target="_blank"
-                    data-position="top" data-tooltip="View Source"
-                    class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i
-                      class="fa fa-github"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Replacing Traditional Camera Straps -->
-          <div class="col s12 m6 l4">
-            <div class="card medium">
-              <div class="card-image waves-effect waves-block waves-light">
-                <img alt="Screenshot of  web app" src="assets/img/computer-vision-v2-04.png" style="height: 100%; width: 100%" class="activator" />
-              </div>
-              <div class="card-content">
-                <span class="card-title activator teal-text hoverline">Replacing Traditional Camera Straps<i
-                    class="mdi-navigation-more-vert right"></i></span>
-                <p>
-                  Human-centered engineering design project for a DSLR camera-carrying system.                </p>
-              </div>
-              <div class="card-reveal">
-                <!-- TODO: change this -- only close button -->
-                <!-- <span class="card-title brown-text">Accomplishments<i class="mdi-navigation-close right"></i></span> -->
-                <span class="card-title brown-text"><small>Accomplishments</small><i
-                    class="mdi-navigation-close right"></i></span>
-                <ul>
-                  <li>Conducted client interviews to define <b>7 measurable design objectives</b>, generating <b>62 solutions</b> and narrowing them to 3 final designs through structured evaluation methods.</li>
-                  <li>Designed <b>Magnetic Mount</b>, a harness-based camera support system with a magnetic dock, Dyneema® retractable cord, and IP67 waterproof sensor.</li>
-                  <li>Co-authored a <b>50+ page Conceptual Design Specification</b> and built and tested a prototype achieving <b>&lt;2s camera access</b>. </li>
-                  <li>Presented the prototype and test results to the client and a <b>60+ person audience</b>.</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-
-          <!-- Bahen Courtyard Sustainability Initiative -->
-          <div class="col s12 m6 l4">
-            <div class="card medium">
-              <div class="card-image waves-effect waves-block waves-light">
-                <img alt="Screenshot of  web app" src="assets/img/gan.jpg" style="height: 100%; width: 100%" class="activator" />
-              </div>
-              <div class="card-content">
-                <span class="card-title activator teal-text hoverline">Bahen Courtyard Sustainability Initiative<i
-                    class="mdi-navigation-more-vert right"></i></span>
-                <p>
-                  Sustainability-focused engineering design and project management initiative.
-                </p>
-              </div>
-              <div class="card-reveal">
-                <!-- TODO: change this -- only close button -->
-                <!-- <span class="card-title brown-text">Accomplishments<i class="mdi-navigation-close right"></i></span> -->
-                <span class="card-title brown-text"><small>Accomplishments</small><i
-                    class="mdi-navigation-close right"></i></span>
-                <ul>
-                  <li>Conducted stakeholder interviews and site analysis to define accessibility, sustainability, and inclusion requirements for a <b>$390K conceptual redesign</b>.</li>
-                  <li>Designed a solar-powered conveyor and ecobrick system that diverts <b>≥60% of unrecyclable plastics</b> from landfill.</li>
-                  <li>Led collaborative ideation and evaluation of <b>170+ concepts</b>, narrowing them to 3 final designs through structured evaluation.</li>
-                  <li>Co-authored an <b>81-page Conceptual Design Specification</b> for client review.</li>
-                </ul>
-              </div>
-            </div>
-          </div>
+        <!-- Load More Button -->
+        <div class="center-align">
+          <button id="load-more-btn" class="btn waves-effect waves-light">
+            Load More Projects
+          </button>
+        </div>
       </div>
     </section>
 
@@ -817,6 +599,184 @@
         closeOnClick: true // Closes side-nav on <a> clicks, useful for Angular/Meteor
       })
     })
+  </script>
+
+  <script>
+    const projects = [
+      {
+        title: "Music Genre Categorization",
+        image: "assets/img/project-music-player.png",
+        description: "CNN-based music genre classification using audio signal processing and machine learning.",
+        tools: "Python, PyTorch, Librosa, NumPy, GitHub",
+        accomplishments: [
+          "Developed a CNN music genre classifier using 128-band mel spectrograms, achieving 79.46% test accuracy across 7 genres.",
+          "Built an audio preprocessing pipeline combining and balancing 4,625 samples from GTZAN and FMA with time stretching, pitch shifting, and Gaussian noise augmentation.",
+          "Benchmarked the CNN against an SVM baseline and evaluated performance on 35-70 unseen songs, achieving 77.02% accuracy."
+        ],
+        github: "https://github.com/ireen-z-cheralody/CNN-Driven-Music-Genre-Categorization"
+      },
+
+      {
+        title: "Tummi GIS",
+        image: "assets/img/project-quizup-logo-1.png",
+        description: "High-performance C/C++ mapping and routing application.",
+        tools: "C, C++, EZGL, Libcurl, VNC, Glade, GTK, APIs, Git",
+        accomplishments: [
+          "Engineered Dijkstra + A* pathfinding with turn-penalty handling, reducing average route query time by ~40%.",
+          "Implemented a multithreaded Traveling Courier Problem solver using iterated local search, double-bridge perturbation, and or-opt moves across 4 parallel threads, achieving solutions within 15% of optimal.",
+          "Optimized map rendering and routing through cached road geometry, background-threaded computation, and Valgrind debugging, reducing per-frame render time by ~60% on graphs with 200k+ edges."
+        ],
+        github: ""
+      },
+
+      {
+        title: "Low-Level GarageBand",
+        image: "assets/img/project-blog-logo.jpg",
+        description: "Hardware-accelerated digital audio workstation built in C.",
+        tools: "C, VGA Display, CPULator, GitHub",
+        accomplishments: [
+          "Built a ~3,000+ line GarageBand-style digital audio workstation in C on a DE1-SoC (RISC-V), integrating real-time audio, VGA graphics, and PS/2 input.",
+          "Implemented memory-mapped audio playback across multiple simultaneous channels and double-buffered VGA rendering, achieving <10 ms audio latency and ~60 FPS.",
+          "Integrated low-level PS/2 input and hardware debugging across audio FIFOs, framebuffers, and interrupts, achieving <20 ms end-to-end input response time."
+        ],
+        github: "https://github.com/alex-an0406/FPGArageBand"
+      },
+
+      {
+        title: "Low-Level Pacman",
+        image: "assets/img/project-aim_bert-bias.png",
+        description: "FPGA-based Pac-Man game developed in Verilog.",
+        tools: "Verilog HDL, Quartus, DEsim, ModelSim",
+        accomplishments: [
+          "Developed a ~5,000+ line Pac-Man game in Verilog HDL, synthesizing and deploying the design on FPGA hardware.",
+          "Designed 10+ hierarchical finite state machines for player movement, collision detection, scoring, and game-state control.",
+          "Integrated PS/2 keyboard input and VGA graphics at ~60 FPS and debugged hardware-simulation mismatches involving VGA artifacts and maze boundaries."
+        ],
+        github: "https://github.com/ireen-z-cheralody/Low-Level-Pacman-in-Verilog"
+      },
+
+      {
+        title: "Replacing Traditional Camera Straps",
+        image: "assets/img/computer-vision-v2-04.png",
+        description: "Human-centered engineering design project for a DSLR camera-carrying system.",
+        tools: "Engineering Design, Prototyping, Project Management",
+        accomplishments: [
+          "Conducted client interviews to define 7 measurable design objectives, generating 62 solutions and narrowing them to 3 final designs through structured evaluation methods.",
+          "Designed Magnetic Mount, a harness-based camera support system with a magnetic dock, Dyneema® retractable cord, and IP67 waterproof sensor.",
+          "Co-authored a 50+ page Conceptual Design Specification and built and tested a prototype achieving <2s camera access.",
+          "Presented the prototype and test results to the client and a 60+ person audience."
+        ],
+        github: ""
+      },
+
+      {
+        title: "Bahen Courtyard Sustainability Initiative",
+        image: "assets/img/gan.jpg",
+        description: "Sustainability-focused engineering design and project management initiative.",
+        tools: "Engineering Design, Sustainability, Project Management",
+        accomplishments: [
+          "Conducted stakeholder interviews and site analysis to define accessibility, sustainability, and inclusion requirements for a $390K conceptual redesign.",
+          "Designed a solar-powered conveyor and ecobrick system that diverts ≥60% of unrecyclable plastics from landfill.",
+          "Led collaborative ideation and evaluation of 170+ concepts, narrowing them to 3 final designs through structured evaluation.",
+          "Co-authored an 81-page Conceptual Design Specification for client review."
+        ],
+        github: ""
+      }
+    ];
+
+    let projectsDisplayed = 2;
+
+    function displayProjects() {
+      const projectsContainer = document.getElementById("projects-container");
+
+      projectsContainer.innerHTML = "";
+
+      for (let i = 0; i < projectsDisplayed && i < projects.length; i++) {
+        const project = projects[i];
+
+        let accomplishmentsHTML = "";
+
+        project.accomplishments.forEach(function(accomplishment) {
+          accomplishmentsHTML += `<li>${accomplishment}</li>`;
+        });
+
+        let githubHTML = "";
+
+        if (project.github) {
+          githubHTML = `
+            <div class="card-action">
+              <a
+                aria-label="Visit the GitHub repository for ${project.title}"
+                href="${project.github}"
+                target="_blank"
+                data-position="top"
+                data-tooltip="View Source"
+                class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped">
+                <i class="fa fa-github"></i>
+              </a>
+            </div>
+          `;
+        }
+
+        projectsContainer.innerHTML += `
+          <div class="col s12 m6 l4">
+            <div class="card medium">
+
+              <div class="card-image waves-effect waves-block waves-light">
+                <img
+                  alt="${project.title}"
+                  src="${project.image}"
+                  style="height: 100%; width: 100%"
+                  class="activator" />
+              </div>
+
+              <div class="card-content">
+                <span class="card-title activator teal-text hoverline">
+                  ${project.title}
+                  <i class="mdi-navigation-more-vert right"></i>
+                </span>
+
+                <p>
+                  ${project.description}
+                </p>
+              </div>
+
+              <div class="card-reveal">
+                <span class="card-title teal-text">
+                  <small>Accomplishments</small>
+                  <i class="mdi-navigation-close right"></i>
+                </span>
+
+                <ul>
+                  <li><b>Tools:</b> ${project.tools}</li>
+                  ${accomplishmentsHTML}
+                </ul>
+
+                ${githubHTML}
+
+              </div>
+            </div>
+          </div>
+        `;
+      }
+
+      // Hide the button once all projects are displayed
+        const loadMoreButton = document.getElementById("load-more-btn");
+
+        if (projectsDisplayed >= projects.length) {
+          loadMoreButton.style.display = "none";
+        } else {
+          loadMoreButton.style.display = "inline-block";
+        }
+      }
+
+      document.getElementById("load-more-btn").addEventListener("click", function() {
+        projectsDisplayed = projects.length;
+        displayProjects();
+      });
+
+    // Initially display the first two projects
+      displayProjects();
   </script>
 </body>
 
