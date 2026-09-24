@@ -602,6 +602,84 @@
   </script>
 
   <script>
+    const themes = {
+      purple: {
+        primary: "#6A1B9A",
+        secondary: "#E91E63",
+        light: "#FCE4EC",
+        heading: "#F8BBD0"
+      },
+
+      ocean: {
+        primary: "#1565C0",
+        secondary: "#00ACC1",
+        light: "#E0F7FA",
+        heading: "#B3E5FC"
+      },
+
+      sunset: {
+        primary: "#E65100",
+        secondary: "#D81B60",
+        light: "#FBE9E7",
+        heading: "#FFCCBC"
+      },
+
+      forest: {
+        primary: "#2E7D32",
+        secondary: "#00897B",
+        light: "#E8F5E9",
+        heading: "#C8E6C9"
+      }
+    };
+
+    function applyTheme(themeName) {
+      const theme = themes[themeName];
+
+      document.documentElement.style.setProperty(
+        "--primary-color",
+        theme.primary
+      );
+
+      document.documentElement.style.setProperty(
+        "--secondary-color",
+        theme.secondary
+      );
+
+      document.documentElement.style.setProperty(
+        "--light-color",
+        theme.light
+      );
+
+      document.documentElement.style.setProperty(
+        "--heading-text",
+        theme.heading
+      );
+
+      localStorage.setItem("selectedTheme", themeName);
+    }
+
+    const themeToggle = document.getElementById("theme-toggle");
+    const themeOptions = document.getElementById("theme-options");
+
+    themeToggle.addEventListener("click", function () {
+      themeOptions.classList.toggle("show");
+    });
+
+    document.querySelectorAll(".theme-option").forEach(function (button) {
+      button.addEventListener("click", function () {
+        const selectedTheme = this.dataset.theme;
+
+        applyTheme(selectedTheme);
+        themeOptions.classList.remove("show");
+      });
+    });
+
+    const savedTheme = localStorage.getItem("selectedTheme");
+
+    if (savedTheme && themes[savedTheme]) {
+      applyTheme(savedTheme);
+    }
+
     const projects = [
       {
         title: "Music Genre Categorization",
@@ -778,6 +856,31 @@
     // Initially display the first two projects
       displayProjects();
   </script>
+
+  <!-- Theme Picker UI -->
+  <div id="theme-picker">
+    <button id="theme-toggle" aria-label="Open theme picker">
+      🎨
+    </button>
+
+    <div id="theme-options">
+      <button class="theme-option" data-theme="purple">
+        💜 Purple & Pink
+      </button>
+
+      <button class="theme-option" data-theme="ocean">
+        🌊 Ocean
+      </button>
+
+      <button class="theme-option" data-theme="sunset">
+        🌅 Sunset
+      </button>
+
+      <button class="theme-option" data-theme="forest">
+        🌿 Forest
+      </button>
+    </div>
+  </div>
 </body>
 
 </html>
